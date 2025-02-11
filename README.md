@@ -11,5 +11,9 @@ https://www.ffmpeg.org/download.html
 https://github.com/ggerganov/whisper.cpp/tree/master
 
 Change `$whisperPath` and `$modelPath` as needed in `whisper.cpp_transcribe.ps1`.
+
+## 3. Modify cli arguments as needed.
+
+https://github.com/ggerganov/whisper.cpp/tree/master/examples/cli
 	
-## 3. Run `whisper.cpp_transcribe.ps1` and type in the directory of your video folder.
+## 4. Run `whisper.cpp_transcribe.ps1` and type in the directory of your video folder.
