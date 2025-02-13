@@ -2,7 +2,7 @@
 while ($true) {
 
     # Prompt user for input folder
-    $inputFolder = Read-Host "Enter the path to the folder containing .m4v files"
+    $inputFolder = Read-Host "Enter the path to the folder containing .m4v files:"
     
     # Verify that the provided folder path exists
     if (-not (Test-Path $inputFolder)) {
@@ -49,7 +49,7 @@ while ($true) {
     
     Write-Host "Transcription completed for all videos in '$inputFolder'."
     
-    # Optionally, pause the script before processing a new folder.
-    Write-Host "Press any key to process another folder, or Ctrl+C to exit..."
-    [void][System.Console]::ReadKey($true)
+    # # Optionally, pause the script before processing a new folder.
+    # Write-Host "Press any key to process another folder, or Ctrl+C to exit..."
+    # [void][System.Console]::ReadKey($true)
 }
