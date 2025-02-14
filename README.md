@@ -10,7 +10,7 @@ Powershell script to batch transcribe videos with `ffmpeg` and `whisper.cpp`.
 
 <https://github.com/ggerganov/whisper.cpp/tree/master>
 
-Change `$whisperPath` and `$modelPath` as needed in `whisper.cpp_transcribe.ps1`.
+Modify `$whisperPath` and `$modelPath` as needed in `whisper.cpp_transcribe.ps1`.
 
 ## 3. Modify cli arguments as needed
 
