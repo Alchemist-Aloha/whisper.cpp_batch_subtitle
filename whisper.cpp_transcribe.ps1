@@ -41,7 +41,7 @@ while ($true) {
         # set the word threshold (--word-thold 0.5), choose best-of 5,
         # automatically detect language (-l auto), set an endpoint threshold (-et 2.8), and generate an SRT file (-osrt).
         # The output file prefix is specified with -of.
-        & $whisperPath -m "$modelPath" -t 4 --max-context 0 -tr true --no-speech-thold 0.1 --word-thold 0.5 --best-of 5 -l auto -et 2.8 -osrt --prompt "$prompt" -f "$audioFile" -of "$inputFolder\$baseName"
+        & $whisperPath -m "$modelPath" -t 4 --max-context 0 -tr true --logprob-thold -0.5 --no-speech-thold 0.3 --word-thold 0.5 --best-of 5 -l auto -et 2.8 -osrt --prompt "$prompt" -f "$audioFile" -of "$inputFolder\$baseName"
     
         # Optionally, remove the temporary audio file after transcription is complete.
         Remove-Item "$audioFile"
