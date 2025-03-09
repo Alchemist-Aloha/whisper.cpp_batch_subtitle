@@ -1,6 +1,6 @@
 # Setup Guide
 
-2025-03-09 This script has been rewritten in python in [explicit_util](https://github.com/Alchemist-Aloha/explicit_util). The python code utilize asyncio which should perform better than this script.
+2025-03-09 This script has been rewritten in python in [explicit_util](https://github.com/Alchemist-Aloha/explicit_util). The python code utilizes asyncio which should perform better than this script.
 
 Powershell script to batch transcribe videos with `ffmpeg` and `whisper.cpp`.
 
